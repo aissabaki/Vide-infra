@@ -300,10 +300,11 @@ input {
   flex-basis: 33%;
 }
 
-.logo {
+.logo > a span {
   font-family: 'Amatic SC', cursive;
   font-size: var(--h3-font-size);
   font-weight: var(--font-bolder);
+  color: var(--Eerie-Black-clr);
 }
 
 /* expertise */

@@ -71,7 +71,7 @@ expertiseDetails.addEventListener('mouseout', function () {
 listItems.forEach((item) => {
   item.addEventListener('mouseover', function () {
     let randomNum = Math.floor(Math.random() * 9);
-    expertiseImage.src = `/assets/media/images/expertise/0${randomNum}.png`;
+    expertiseImage.src = `assets/media/images/expertise/0${randomNum}.png`;
   });
 });
 
