@@ -210,6 +210,7 @@ input {
   justify-content: space-between;
 }
 
+
 .align-left {
   text-align: left !important;
   margin-left: .5rem !important;
@@ -651,7 +652,7 @@ input {
 /*=============== Insights-section ===============*/
 .Insights-section .section-title .btn{
   letter-spacing: 2.5px;
-  align-self:self-start;
+  align-self: start;
 }
 .Insights-section .section-title {
   flex-direction: column;
@@ -703,6 +704,11 @@ footer div a, .socail-media {
   cursor: pointer;
   letter-spacing: 1px;
 }
+.get-in-touch {
+  flex-direction: row;
+  gap: .5rem;
+  align-items: flex-start;
+ }
 /*=============== Responsive ===============*/
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .md {
@@ -711,6 +717,7 @@ footer div a, .socail-media {
   .md-2-col {
     grid-template-columns: repeat(2, 1fr);
   }
+ 
   /*=============== header ===============*/
   .animated-circle {
     margin-left: 3rem;
@@ -746,7 +753,11 @@ footer div a, .socail-media {
  .Insights-section .section-title {
   flex-direction: row;
 }
+/* footer */
 
+.get-in-touch {
+  flex-direction: column;
+ }
   
  
 }
@@ -757,6 +768,7 @@ footer div a, .socail-media {
   .lg-2-col {
     grid-template-columns: repeat(2, 1fr);
   }
+  
    /*=============== header ===============*/
    .animated-circle {
     margin-left: 3rem;
@@ -815,4 +827,8 @@ footer div a, .socail-media {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
   }
+  /* footer */
+  .get-in-touch {
+    flex-direction: column;
+   }
 }

@@ -80,6 +80,7 @@ listItems.forEach((item) => {
 
 const sections = document.querySelectorAll('.section'),
       header = document.querySelector('.header'),
+      logo = document.querySelector('.logo a span'),
       links = document.querySelectorAll('.nav-links a');
 
 function isInViewport(el) {
@@ -98,6 +99,7 @@ window.addEventListener('scroll', function () {
       header.style.backgroundColor = `${section.dataset.color}`
       if (section.dataset.color == '#191b1d') {
         header.style.color = "white"
+        logo.style.color = "white"
         expertiseList.style.color = "black"
         links.forEach((link) => link.style.color = "white")
         openBtn.style.backgroundColor = 'white'
@@ -105,6 +107,7 @@ window.addEventListener('scroll', function () {
         header.style.color = "#191b1d"
         links.forEach((link) => link.style.color = "black")
         openBtn.style.backgroundColor = ''
+        logo.style.color = "black"
       }
   }
   })
